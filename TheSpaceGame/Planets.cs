@@ -8,10 +8,16 @@ namespace TheSpaceGame
 {
     class Planets
     {
+        public static double x1;
+        public static double y1;        
+        
 
         public static void Earth(int credits, double time, double currentLocation)
         {           
             bool onEarth = true;
+            x1 = 0;
+            y1 = 0;
+
             string keyMain = "good";
             // On planet loop
             do
@@ -234,8 +240,8 @@ namespace TheSpaceGame
         }
         public static void AlphaCentauri(int credits, double time, double currentLocation)
         {
-            double x1 = 0;
-            double y1 = 4.367;
+            x1 = 0;
+            y1 = 4.367;
             bool onAlphaCentauri = true;
 
             // On planet loop
@@ -448,8 +454,8 @@ namespace TheSpaceGame
         }
         public static void Trappist(int credits, double time, double currentLocation)
         {
-            double x1 = 1.0;
-            double y1 = 3.50;
+            x1 = 1.0;
+            y1 = 3.50;
             bool onTrappist = true;
 
             // On planet loop
