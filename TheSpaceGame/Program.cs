@@ -52,20 +52,20 @@ namespace TheSpaceGame
 
             while (GameOver(credits, time) == false)
             {
-                double x1 = 0;
-                double y1 = 0;
+                double x1 = Planets.x1;
+                double y1 = Planets.y1;
 
-                while ((x1 == 0) && (y1 == 0))
+                if ((x1 == 0) && (y1 == 0))
                 {
-                    Planets.Earth(credits, time, currentLocation);
+                    Planets.Earth();
                 }
-                while ((x1 == 0) && (y1 == 4.367))
+                else if ((x1 == 0) && (y1 == 4.367))
                 {
-                    Planets.AlphaCentauri(credits, time, currentLocation);
+                    Planets.AlphaCentauri();
                 }
-                while ((x1 == 1.0) && (y1 == 3.50))
+                else if ((x1 == 1.0) && (y1 == 3.50))
                 {
-                    Planets.Trappist(credits, time, currentLocation);
+                    Planets.Trappist();
                 }     
 
             }

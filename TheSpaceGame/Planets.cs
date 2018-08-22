@@ -9,10 +9,10 @@ namespace TheSpaceGame
     class Planets
     {
         public static double x1;
-        public static double y1;        
+        public static double y1;
         
 
-        public static void Earth(int credits, double time, double currentLocation)
+        public static void Earth()
         {           
             bool onEarth = true;
             x1 = 0;
@@ -184,7 +184,7 @@ namespace TheSpaceGame
 
                         if ((travelConf == "Yes") || (travelConf == "yes")) // Set up travel to alpha centauri
                         {
-
+                            AlphaCentauri();
                         }
                         else if ((travelConf == "no") || (travelConf == "No"))
                         {
@@ -205,7 +205,7 @@ namespace TheSpaceGame
 
                         if ((travelConf == "Yes") || (travelConf == "yes")) // Set up travel to TRAPPIST-1
                         {
-
+                            Trappist();
                         }
                         else if ((travelConf == "no") || (travelConf == "No"))
                         {
@@ -238,7 +238,7 @@ namespace TheSpaceGame
                 }
             } while ((onEarth == true) || (keyMain == "4"));         
         }
-        public static void AlphaCentauri(int credits, double time, double currentLocation)
+        public static void AlphaCentauri()
         {
             x1 = 0;
             y1 = 4.367;
@@ -403,7 +403,7 @@ namespace TheSpaceGame
 
                         if ((travelConf == "Yes") || (travelConf == "yes")) // Set up travel to Earth
                         {
-
+                            Earth();
                         }
                         else if ((travelConf == "no") || (travelConf == "No"))
                         {
@@ -430,7 +430,7 @@ namespace TheSpaceGame
 
                         if ((travelConf == "Yes") || (travelConf == "yes")) // Set up travel to TRAPPIST-1
                         {
-
+                            Trappist();
                         }
                         else if ((travelConf == "no") || (travelConf == "No"))
                         {
@@ -452,7 +452,7 @@ namespace TheSpaceGame
                 }
             } while (onAlphaCentauri == true);
         }
-        public static void Trappist(int credits, double time, double currentLocation)
+        public static void Trappist()
         {
             x1 = 1.0;
             y1 = 3.50;
@@ -617,7 +617,7 @@ namespace TheSpaceGame
 
                         if ((travelConf == "Yes") || (travelConf == "yes")) // Set up travel to earth
                         {
-
+                            Earth();
                         }
                         else if ((travelConf == "no") || (travelConf == "No"))
                         {
@@ -638,7 +638,7 @@ namespace TheSpaceGame
 
                         if ((travelConf == "Yes") || (travelConf == "yes")) // Set up travel to alpha centauri
                         {
-
+                            AlphaCentauri();
                         }
                         else if ((travelConf == "no") || (travelConf == "No"))
                         {
